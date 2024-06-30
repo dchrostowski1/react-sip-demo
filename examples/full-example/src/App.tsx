@@ -6,8 +6,8 @@ function App() {
     <div className="p-5">
       <SIPProvider
         options={{
-          domain: "voice.chatchilladev.sip.jambonz.cloud",
-          webSocketServer: "wss://sip.jambonz.cloud:8443",
+          domain: "192.168.2.150",
+          webSocketServer: "ws://192.168.2.150:8088/ws",
         }}
       >
         <div>

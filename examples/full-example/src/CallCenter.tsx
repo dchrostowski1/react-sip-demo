@@ -10,10 +10,10 @@ export const CallCenter = () => {
     registerStatus,
     connectStatus,
   } = useSIPProvider();
-  const [username, setUsername] = useState<string>("test8");
-  const [password, setPassword] = useState<string>("test123");
+  const [username, setUsername] = useState<string>("2000");
+  const [password, setPassword] = useState<string>("1234");
 
-  const [callTo, setCallTo] = useState<string>("7147520454");
+  const [callTo, setCallTo] = useState<string>("1000");
 
   return (
     <div className="flex justify-center">
@@ -116,7 +116,7 @@ export const CallCenter = () => {
           onSubmit={async (e) => {
             e.preventDefault();
             await sessionManager?.call(
-              `sip:${callTo}@voice.chatchilladev.sip.jambonz.cloud`,
+              `sip:${callTo}@192.168.2.18`,
               {}
             );
           }}
